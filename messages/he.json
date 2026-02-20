@@ -1,0 +1,117 @@
+{
+  "app": {
+    "title": "הערכת סיכוני סייבר",
+    "subtitle": "ניקוד סיכונים והמלצות בקרה"
+  },
+  "form": {
+    "title": "פרמטרי הערכה",
+    "environment": "סביבה",
+    "exposure": "חשיפה",
+    "systemType": "סוג מערכת",
+    "classification": "רמת סיווג",
+    "controlEffectiveness": "יעילות בקרה",
+    "likelihood": "הסתברות",
+    "securityDomain": "תחום אבטחה",
+    "compensatingControl": "בקרה מפצה",
+    "compensatingControlDescription": "הפחתת סיכון של 20% עבור בקרות מפצות",
+    "selectPlaceholder": "בחר...",
+    "clear": "נקה הכל",
+    "riskDescription": "תיאור הסיכון",
+    "riskDescriptionPlaceholder": "תאר את תרחיש הסיכון המוערך..."
+  },
+  "parameters": {
+    "environment": {
+      "OT": "OT (טכנולוגיה תפעולית)",
+      "IOT": "IoT (אינטרנט של דברים)",
+      "IT": "IT (טכנולוגיית מידע)",
+      "InternalCloud": "ענן פנימי",
+      "ExternalCloud": "ענן חיצוני"
+    },
+    "exposure": {
+      "Full": "חשיפה מלאה",
+      "Partial": "חשיפה חלקית",
+      "None": "ללא חשיפה"
+    },
+    "systemType": {
+      "Primary": "מערכת ראשית",
+      "Secondary": "מערכת משנית"
+    },
+    "classification": {
+      "Level8": "מידע בטחוני שמור אדום",
+      "Level7": "מידע תשתיתי קריטי שמור צהוב",
+      "Level6": "מידע תשתיתי חשמלי שמור צהוב",
+      "Level5": "מידע אישי רגיש",
+      "Level4": "מידע אישי מוגבל",
+      "Level3": "מידע תשתיתי חשמלי שמור עסקי",
+      "Level2": "מידע עסקי סודי",
+      "Level1": "מידע עסקי שמור"
+    },
+    "controlEffectiveness": {
+      "1": "1 - חלש",
+      "2": "2 - מתחת לממוצע",
+      "3": "3 - ממוצע",
+      "4": "4 - טוב",
+      "5": "5 - מצוין"
+    },
+    "likelihood": {
+      "1": "1 - נמוכה מאוד",
+      "2": "2 - נמוכה",
+      "3": "3 - בינונית",
+      "4": "4 - גבוהה",
+      "5": "5 - גבוהה מאוד"
+    }
+  },
+  "domains": {
+    "RiskManagement": "ניהול סיכונים",
+    "AccessControl": "בקרת גישה",
+    "AssetSecurity": "אבטחת נכסים",
+    "NetworkSecurity": "אבטחת רשת",
+    "ApplicationSecurity": "אבטחת אפליקציות",
+    "EndpointSecurity": "אבטחת נקודות קצה",
+    "DataProtection": "הגנת מידע",
+    "VulnerabilityManagement": "ניהול חולשות",
+    "MonitoringThreatDetection": "ניטור וגילוי איומים",
+    "IncidentResponse": "תגובה לאירועים",
+    "AwarenessTraining": "מודעות והדרכה",
+    "SupplyChain": "שרשרת אספקה",
+    "CloudInfrastructure": "תשתית ענן",
+    "AIInfrastructure": "תשתית בינה מלאכותית"
+  },
+  "results": {
+    "title": "תוצאות הערכה",
+    "riskScore": "ציון סיכון",
+    "riskLevel": "רמת סיכון",
+    "rawScore": "ציון גולמי",
+    "finalScore": "ציון סופי",
+    "compensatingApplied": "בקרה מפצה הוחלה (-20%)",
+    "parameterBreakdown": "פירוט פרמטרים",
+    "noResults": "מלא את כל הפרמטרים לצפייה בתוצאות",
+    "narrative": "תיאור סיכון",
+    "contextualControls": "בקרות מומלצות על בסיס תיאור הסיכון",
+    "contextualControlsDescription": "בקרות אלו מותאמות למילות המפתח בתיאור הסיכון שהזנת, מכל תחומי האבטחה הרלוונטיים.",
+    "recommendedControls": "בקרות לפי תחום אבטחה"
+  },
+  "riskLevels": {
+    "VeryHigh": "גבוה מאוד",
+    "High": "גבוה",
+    "Medium": "בינוני",
+    "Low": "נמוך",
+    "VeryLow": "נמוך מאוד"
+  },
+  "export": {
+    "pdf": "ייצוא PDF",
+    "csv": "ייצוא CSV"
+  },
+  "language": {
+    "toggle": "שפה",
+    "en": "English",
+    "he": "עברית"
+  },
+  "narrative": {
+    "VeryHigh": "המערכת המוערכת מציגה רמת סיכון **גבוהה מאוד** עם ציון של {score}. פועלת בסביבת {environment} עם חשיפה {exposure}, מערכת {systemType} זו המסווגת ברמה {classification} עומדת בפני איומים קריטיים. יעילות הבקרה הנוכחית מדורגת ברמה {controlEffectiveness} עם דירוג הסתברות {likelihood}. **נדרשת פעולה מיידית** ליישום בקרות אבטחה מוגברות בתחום {domain}. השילוב של חשיפה גבוהה ובקרות חלשות יוצר מצב סיכון בלתי מקובל המחייב תיקון בעדיפות עליונה.",
+    "High": "ההערכה מגלה רמת סיכון **גבוהה** עם ציון של {score}. סביבת ה-{environment} עם חשיפה {exposure} תורמת משמעותית לפרופיל הסיכון של מערכת {systemType} זו. ברמת סיווג {classification}, עם יעילות בקרה ברמה {controlEffectiveness} והסתברות ברמה {likelihood}, **נדרשת תשומת לב מהירה** לחיזוק ההגנות בתחום {domain}. מומלצים ניטור מוגבר ויישום בקרות מואץ.",
+    "Medium": "המערכת מציגה רמת סיכון **בינונית** עם ציון של {score}. פועלת בסביבת {environment} עם חשיפה {exposure}, מערכת {systemType} זו ברמת סיווג {classification} בעלת פרופיל סיכון מתון. יעילות בקרה ברמה {controlEffectiveness} והסתברות ברמה {likelihood} מצביעים על מצב אבטחה **מאוזן אך ניתן לשיפור** בתחום {domain}. יש לתעדף שיפורים מתוכננים במחזור הסקירה הבא.",
+    "Low": "ההערכה מצביעה על רמת סיכון **נמוכה** עם ציון של {score}. סביבת ה-{environment} עם חשיפה {exposure} מספקת פרופיל סיכון חיובי למערכת {systemType} זו ברמת סיווג {classification}. עם יעילות בקרה ברמה {controlEffectiveness} והסתברות ברמה {likelihood}, תחום {domain} מפגין **הגנה נאותה**. יש להמשיך בניטור שוטף ולשמור על הבקרות הנוכחיות.",
+    "VeryLow": "המערכת מפגינה רמת סיכון **נמוכה מאוד** עם ציון של {score}. פועלת בסביבת {environment} עם חשיפה {exposure}, מערכת {systemType} זו ברמת סיווג {classification} נהנית מבקרות חזקות. עם יעילות ברמה {controlEffectiveness} והסתברות נמוכה ברמה {likelihood}, תחום {domain} **מוגן היטב**. יש לשמור על מצב האבטחה הנוכחי ולבצע סקירות תקופתיות."
+  }
+}

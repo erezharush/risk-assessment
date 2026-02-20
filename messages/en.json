@@ -1,0 +1,117 @@
+{
+  "app": {
+    "title": "Cybersecurity Risk Assessment",
+    "subtitle": "Risk Scoring & Control Recommendations"
+  },
+  "form": {
+    "title": "Assessment Parameters",
+    "environment": "Environment",
+    "exposure": "Exposure",
+    "systemType": "System Type",
+    "classification": "Classification Level",
+    "controlEffectiveness": "Control Effectiveness",
+    "likelihood": "Likelihood",
+    "securityDomain": "Security Domain",
+    "compensatingControl": "Compensating Control",
+    "compensatingControlDescription": "Apply 20% risk reduction for compensating controls",
+    "selectPlaceholder": "Select...",
+    "clear": "Clear",
+    "riskDescription": "Risk Description",
+    "riskDescriptionPlaceholder": "Describe the risk scenario being assessed..."
+  },
+  "parameters": {
+    "environment": {
+      "OT": "OT (Operational Technology)",
+      "IOT": "IoT (Internet of Things)",
+      "IT": "IT (Information Technology)",
+      "InternalCloud": "Internal Cloud",
+      "ExternalCloud": "External Cloud"
+    },
+    "exposure": {
+      "Full": "Full Exposure",
+      "Partial": "Partial Exposure",
+      "None": "No Exposure"
+    },
+    "systemType": {
+      "Primary": "Primary System",
+      "Secondary": "Secondary System"
+    },
+    "classification": {
+      "Level8": "Security Info - Red Classification",
+      "Level7": "Critical Infrastructure - Yellow Classification",
+      "Level6": "Electric Infrastructure - Yellow Classification",
+      "Level5": "Sensitive Personal Info",
+      "Level4": "Restricted Personal Info",
+      "Level3": "Electric Infrastructure - Business Classification",
+      "Level2": "Confidential Business Info",
+      "Level1": "Protected Business Info"
+    },
+    "controlEffectiveness": {
+      "1": "1 - Weak",
+      "2": "2 - Below Average",
+      "3": "3 - Average",
+      "4": "4 - Good",
+      "5": "5 - Excellent"
+    },
+    "likelihood": {
+      "1": "1 - Very Low",
+      "2": "2 - Low",
+      "3": "3 - Medium",
+      "4": "4 - High",
+      "5": "5 - Very High"
+    }
+  },
+  "domains": {
+    "RiskManagement": "Risk Management",
+    "AccessControl": "Access Control",
+    "AssetSecurity": "Asset Security",
+    "NetworkSecurity": "Network Security",
+    "ApplicationSecurity": "Application Security",
+    "EndpointSecurity": "Endpoint Security",
+    "DataProtection": "Data Protection",
+    "VulnerabilityManagement": "Vulnerability Management",
+    "MonitoringThreatDetection": "Monitoring & Threat Detection",
+    "IncidentResponse": "Incident Response",
+    "AwarenessTraining": "Awareness & Training",
+    "SupplyChain": "Supply Chain",
+    "CloudInfrastructure": "Cloud Infrastructure",
+    "AIInfrastructure": "AI Infrastructure"
+  },
+  "results": {
+    "title": "Assessment Results",
+    "riskScore": "Risk Score",
+    "riskLevel": "Risk Level",
+    "rawScore": "Raw Score",
+    "finalScore": "Final Score",
+    "compensatingApplied": "Compensating control applied (-20%)",
+    "parameterBreakdown": "Parameter Breakdown",
+    "noResults": "Complete all parameters to see results",
+    "narrative": "Risk Narrative",
+    "contextualControls": "Recommended Controls Based on Risk Description",
+    "contextualControlsDescription": "These controls are matched to the keywords in your risk description, across all relevant security domains.",
+    "recommendedControls": "Domain-Specific Controls"
+  },
+  "riskLevels": {
+    "VeryHigh": "Very High",
+    "High": "High",
+    "Medium": "Medium",
+    "Low": "Low",
+    "VeryLow": "Very Low"
+  },
+  "export": {
+    "pdf": "Export PDF",
+    "csv": "Export CSV"
+  },
+  "language": {
+    "toggle": "Language",
+    "en": "English",
+    "he": "עברית"
+  },
+  "narrative": {
+    "VeryHigh": "The assessed system presents a **very high** risk level with a score of {score}. Operating in a {environment} environment with {exposure} exposure, this {systemType} system classified at {classification} faces critical threats. Current control effectiveness is rated at level {controlEffectiveness} with a likelihood rating of {likelihood}. **Immediate action is required** to implement enhanced security controls in the {domain} domain. The combination of high exposure and weak controls creates an unacceptable risk posture that demands priority remediation.",
+    "High": "The assessment reveals a **high** risk level with a score of {score}. The {environment} environment with {exposure} exposure significantly contributes to the risk profile of this {systemType} system. At classification level {classification}, with control effectiveness at level {controlEffectiveness} and likelihood at {likelihood}, **prompt attention is needed** to strengthen defenses in the {domain} domain. Enhanced monitoring and accelerated control implementation are recommended.",
+    "Medium": "The system shows a **medium** risk level with a score of {score}. Operating in a {environment} environment with {exposure} exposure, this {systemType} system at classification {classification} has a moderate risk profile. Control effectiveness at level {controlEffectiveness} and likelihood at {likelihood} suggest a **balanced but improvable** security posture in the {domain} domain. Planned improvements should be prioritized in the next review cycle.",
+    "Low": "The assessment indicates a **low** risk level with a score of {score}. The {environment} environment with {exposure} exposure provides a favorable risk profile for this {systemType} system at classification {classification}. With control effectiveness at level {controlEffectiveness} and likelihood at {likelihood}, the {domain} domain demonstrates **adequate protection**. Continue regular monitoring and maintain current controls.",
+    "VeryLow": "The system demonstrates a **very low** risk level with a score of {score}. Operating in a {environment} environment with {exposure} exposure, this {systemType} system at classification {classification} benefits from strong controls. With effectiveness at level {controlEffectiveness} and low likelihood at {likelihood}, the {domain} domain is **well-protected**. Maintain current security posture and conduct periodic reviews."
+  }
+}
