@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Inter, Noto_Sans_Hebrew } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/lib/i18n/routing";
 import "@/app/globals.css";
@@ -27,6 +27,8 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   const messages = await getMessages();
   const dir = locale === "he" ? "rtl" : "ltr";

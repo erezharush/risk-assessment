@@ -3,6 +3,7 @@
 import { useState, useMemo, useCallback } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import logo from "../../../public/logo.png";
 import { RotateCcw } from "lucide-react";
 import type { AssessmentInput, AssessmentResult } from "@/types/assessment";
 import { calculateRiskScore } from "@/lib/scoring/engine";
@@ -44,7 +45,7 @@ export default function HomePage() {
       <header className="bg-white border-b shadow-sm sticky top-0 z-40">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Image src="/logo.png" alt="חברת החשמל לישראל" width={100} height={50} priority />
+            <Image src={logo} alt="חברת החשמל לישראל" width={100} height={50} priority />
             <div>
               <h1 className="text-xl font-bold">מחשבון פערי אבטחת סייבר - חברת החשמל</h1>
               <p className="text-xs text-muted-foreground">{t("app.subtitle")}</p>
